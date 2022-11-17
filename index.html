@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <img src="logo.svg" alt="header logo">
+                </div>
+                <ul class="header_content_menu">
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link active">
+                            БАНК
+                        </a>
+                    </li>
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link">
+                            БИЗНЕС
+                        </a>
+                    </li>
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link">
+                            ИНВЕСТИЦИИ
+                        </a>
+                    </li>
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link">
+                            СТРАХОВАНИЕ
+                        </a>
+                    </li>
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link">
+                            МОБАЙЛ
+                        </a>
+                    </li>
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link">
+                            ПУТЕШЕСТВИЯ
+                        </a>
+                    </li>
+                    <li class="header_content_menu_item">
+                        <a href="#" class="header_content_menu_item_link">
+                            РАЗВЛЕЧЕНИЯ
+                        </a>
+                    </li>
+                </ul>
+                <div class="header_login">
+                    <a href="#" class="loginBtn">
+                        ВОЙТИ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="valyuta">
+        <div class="container">
+            <div class="valyuta_body">
+                <div class="valyuta_header">
+                    <h1 class="valyuta_header_head">
+                        Конвертер валют онлайн
+                    </h1>
+                </div>
+                <div class="valyuta_content">
+                    <div class="valyuta_content_item">
+                        <div class="valyuta_content_item_title">
+                            У меня есть 
+                        </div>
+                        <div class="valyuta_content_item_valyutas">
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input left" name="RUB" id="rub1" value="1">
+                                <label for="rub1" class="customRadio_label">RUB</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input left" checked name="USD" id="usd1" value="2" >
+                                <label for="usd1" class="customRadio_label">USD</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input left" name="EUR" id="eur1" value="3" >
+                                <label for="eur1" class="customRadio_label">EUR</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input left" id="gbp1" name="GBP" value="4">
+                                <label for="gbp1" class="customRadio_label">GBP</label>
+                            </div>
+                        </div>
+                        <div class="valyuta_content_item_value">
+                            <div class="valyuta_content_item_value_number">
+                                <input onchange="change(this)" class="valyuta_content_item_value_number--input valyutaValue_left" type="number" value="1">
+                            </div>
+                            <div class="valyuta_content_item_value_info">
+                                1 RUB = 0.0135 USD
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valyuta_content_item">
+                        <div class="valyuta_content_item_title">
+                            Хочу приобрести
+                        </div>
+                        <div class="valyuta_content_item_valyutas">
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input right" name="RUB" id="rub2" value="1">
+                                <label for="rub2" class="customRadio_label">RUB</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input right" id="usd2" name="USD" value="2">
+                                <label for="usd2" class="customRadio_label">USD</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input right" checked id="eur2" name="EUR" value="3">
+                                <label for="eur2" class="customRadio_label">EUR</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="checkbox" class="customRadio_input right" id="gbp2" name="GBP" value="4">
+                                <label for="gbp2" class="customRadio_label">GBP</label>
+                            </div>
+                        </div>
+                        <div class="valyuta_content_item_value">
+                            <div class="valyuta_content_item_value_number">
+                                <input onchange="change(this)" class="valyuta_content_item_value_number--input valyutaValue_right" type="number" value="1">
+                            </div>
+                            <div class="valyuta_content_item_value_info">
+                                1 USD = 73.8896 RUB
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
